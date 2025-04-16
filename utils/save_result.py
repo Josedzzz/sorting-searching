@@ -11,5 +11,5 @@ def save_results(algorithm_name, amount, time, path = "results/time.json"):
         results[algorithm_name] = {}
     results[algorithm_name][str(amount)] = time
     with open(path, "w") as f:
-        json.dump(results, f, indent=4)
+        json.dump(results, f, indent=2)
 
